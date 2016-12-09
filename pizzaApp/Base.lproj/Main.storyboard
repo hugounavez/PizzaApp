@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Alh-Kc-nNw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenidos a Pizza App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4T-gO-F5S">
+                                <color key="backgroundColor" red="0.88434666395187378" green="0.62239760160446167" blue="0.26808059215545654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="YQW-b0-dEK"/>
+                                    <constraint firstAttribute="height" constant="21" id="b5J-2Y-1d7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con Pizza App podrás ordenar tu pizza preferida en cualquiera de nuestras sucursales" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d30-se-FKD">
+                                <color key="backgroundColor" red="0.88434666395187378" green="0.62239760160446167" blue="0.26808059215545654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="Al7-QY-VIe"/>
+                                    <constraint firstAttribute="height" constant="65" id="z1A-8c-OPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-fW-eSq">
+                                <color key="backgroundColor" red="0.73371416330337524" green="0.12820512056350708" blue="0.091984711587429047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ICV-pf-gxl"/>
+                                    <constraint firstAttribute="width" constant="300" id="zZ5-Th-hXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                <state key="normal" title="Hacer una orden">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.87058823529411766" green="0.13333333333333333" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cf4-rO-ma0" kind="show" id="Jhv-Rf-R2G"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-qJ-fT5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="Ua3-e2-osp"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZFW-uF-PB4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666395187378" green="0.62239760160446167" blue="0.26808059215545654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g4T-gO-F5S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0EG-K0-BN7"/>
+                            <constraint firstItem="d30-se-FKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MFt-rb-wQV"/>
+                            <constraint firstItem="bOU-qJ-fT5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Meg-hK-IWZ"/>
+                            <constraint firstItem="d30-se-FKD" firstAttribute="top" secondItem="g4T-gO-F5S" secondAttribute="bottom" constant="39" id="O8S-3K-3CD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bOU-qJ-fT5" secondAttribute="bottom" constant="100" id="cut-wI-j13"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IS2-fW-eSq" secondAttribute="bottom" constant="50" id="euV-oq-20Z"/>
+                            <constraint firstItem="g4T-gO-F5S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="ihn-VT-BxO"/>
+                            <constraint firstItem="d30-se-FKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jiA-Cq-LOT"/>
+                            <constraint firstItem="IS2-fW-eSq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEE-bf-3m1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="anJ-fe-lrg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Pizza SizeVC-->
+        <scene sceneID="HeV-cj-QKc">
+            <objects>
+                <viewController id="cf4-rO-ma0" customClass="PizzaSizeVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3tY-Iz-gXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="IOw-wS-gX7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d7x-b3-CAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJx-5e-0ir">
+                                <color key="backgroundColor" red="0.80887514352798462" green="0.17071279883384705" blue="0.21390974521636963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Grande">
+                                    <color key="titleColor" red="0.098538167774677277" green="0.33889752626419067" blue="0.47204715013504028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="grandeButton:" destination="cf4-rO-ma0" eventType="touchUpInside" id="Y7q-rc-um5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuI-5M-xvD">
+                                <color key="backgroundColor" red="0.99204939603805542" green="0.99221879243850708" blue="0.99203866720199585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Mediana">
+                                    <color key="titleColor" red="0.098538167770000004" green="0.33889752629999997" blue="0.47204715009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="medianaButton:" destination="cf4-rO-ma0" eventType="touchUpInside" id="2ou-sE-k5S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿De que tamaño te gustaría disfrutar de nuestras deliciosas pizzas?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-bZ-gCt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="NQF-CI-CEp"/>
+                                    <constraint firstAttribute="height" constant="171" id="UBU-fI-jGa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-AM-M4u">
+                                <color key="backgroundColor" red="0.0" green="0.57335412502288818" blue="0.27385261654853821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Chica">
+                                    <color key="titleColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chicaButton:" destination="cf4-rO-ma0" eventType="touchUpInside" id="YHe-Nc-nht"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666395187378" green="0.62239760160446167" blue="0.26808059215545654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RuI-5M-xvD" firstAttribute="width" secondItem="uZM-AM-M4u" secondAttribute="width" id="7gc-nT-jUU"/>
+                            <constraint firstItem="RuI-5M-xvD" firstAttribute="centerX" secondItem="d7x-b3-CAQ" secondAttribute="centerX" id="EIF-K9-HaN"/>
+                            <constraint firstItem="uZM-AM-M4u" firstAttribute="centerX" secondItem="d7x-b3-CAQ" secondAttribute="centerX" id="IWV-6D-qbC"/>
+                            <constraint firstItem="uZM-AM-M4u" firstAttribute="height" secondItem="d7x-b3-CAQ" secondAttribute="width" multiplier="0.2" id="MWQ-zJ-H0I"/>
+                            <constraint firstItem="eJx-5e-0ir" firstAttribute="height" secondItem="RuI-5M-xvD" secondAttribute="height" id="Nxe-tQ-b8b"/>
+                            <constraint firstItem="EmL-bZ-gCt" firstAttribute="centerX" secondItem="d7x-b3-CAQ" secondAttribute="centerX" id="SFz-FP-DRB"/>
+                            <constraint firstItem="eJx-5e-0ir" firstAttribute="centerX" secondItem="d7x-b3-CAQ" secondAttribute="centerX" id="XMM-hj-ytN"/>
+                            <constraint firstItem="EmL-bZ-gCt" firstAttribute="top" secondItem="d7x-b3-CAQ" secondAttribute="top" constant="48" id="fvv-1T-50w"/>
+                            <constraint firstItem="eJx-5e-0ir" firstAttribute="width" secondItem="RuI-5M-xvD" secondAttribute="width" id="ndG-0J-FpZ"/>
+                            <constraint firstItem="RuI-5M-xvD" firstAttribute="height" secondItem="uZM-AM-M4u" secondAttribute="height" id="nnk-GQ-7Xj"/>
+                            <constraint firstItem="uZM-AM-M4u" firstAttribute="width" secondItem="d7x-b3-CAQ" secondAttribute="width" id="rK4-Cv-q3s"/>
+                            <constraint firstItem="IOw-wS-gX7" firstAttribute="top" secondItem="uZM-AM-M4u" secondAttribute="bottom" constant="30" id="sZH-vi-OXP"/>
+                            <constraint firstItem="uZM-AM-M4u" firstAttribute="top" secondItem="RuI-5M-xvD" secondAttribute="bottom" constant="30" id="yOf-jC-ok9"/>
+                            <constraint firstItem="RuI-5M-xvD" firstAttribute="top" secondItem="eJx-5e-0ir" secondAttribute="bottom" constant="30" id="zEC-UK-EXj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="nxp-HJ-HSw" kind="show" identifier="pizzaSizeDone" id="sIt-IN-NoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uH-up-2U5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="138"/>
+        </scene>
+        <!--IngredientsVC-->
+        <scene sceneID="wAG-9p-x7E">
+            <objects>
+                <viewController id="7P6-5V-gtl" customClass="IngredientsVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Egg-eZ-HTd"/>
+                        <viewControllerLayoutGuide type="bottom" id="z0M-tE-pPY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hpj-k3-P3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf2-sy-O28">
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="5t4-Kb-tYI"/>
+                                    <constraint firstAttribute="height" constant="49" id="Hqg-kv-0fU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Pepperoni">
+                                    <color key="titleColor" red="0.098538167774677277" green="0.33889752626419067" blue="0.47204715013504028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pepperoniButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="a56-Ez-qyW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-Wc-cOD">
+                                <color key="backgroundColor" red="0.8088751435" green="0.17071279880000001" blue="0.2139097452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Pavo">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pavoButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="Fz0-H6-sHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-Pz-19N">
+                                <color key="backgroundColor" red="0.098538167770000004" green="0.33889752629999997" blue="0.47204715009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Jamón">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jamonButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="cPp-By-Aqp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unP-h6-eYX">
+                                <color key="backgroundColor" red="0.0" green="0.57335412500000005" blue="0.27385261649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Salchicha">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="salchichaButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="zVp-aE-YT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYD-Fl-BkC">
+                                <color key="backgroundColor" red="0.16349864010000001" green="0.61371153590000005" blue="0.56181311609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Pimiento">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pimientoButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="9c2-uu-xRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMK-hS-god">
+                                <color key="backgroundColor" red="0.73371416330000006" green="0.1282051206" blue="0.091984711590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Aceituna">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aceitunaButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="vnx-OZ-dtf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sph-Fy-9eH">
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.1764705882" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Anchoa">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="anchoaButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="L7m-5L-6qn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYh-wH-eDm">
+                                <color key="backgroundColor" red="0.73371416330000006" green="0.1282051206" blue="0.091984711590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="L64-10-oL7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continuarButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="4jc-cd-tJf"/>
+                                    <segue destination="36A-qA-t0A" kind="show" identifier="ingredientsDone" id="RNS-Z8-XuO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvF-9w-97J">
+                                <color key="backgroundColor" red="0.098538167770000004" green="0.33889752629999997" blue="0.47204715009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Cebolla">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cebollaButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="z2y-2e-BfM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-YF-jVA">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Piña">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pinaButtonWithButton:" destination="7P6-5V-gtl" eventType="touchUpInside" id="gQx-wj-Ko6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoge tus ingredientes favoritos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aq-Kt-H58">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="3Hp-CV-BeZ"/>
+                                    <constraint firstAttribute="height" constant="86" id="i6G-4d-Q6i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666395187378" green="0.62239760160446167" blue="0.26808059215545654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c4g-YF-jVA" firstAttribute="width" secondItem="oMK-hS-god" secondAttribute="width" id="1ar-M1-AuU"/>
+                            <constraint firstItem="QR6-Wc-cOD" firstAttribute="height" secondItem="Vf2-sy-O28" secondAttribute="height" id="3BC-OG-iWw"/>
+                            <constraint firstItem="unP-h6-eYX" firstAttribute="height" secondItem="Vf2-sy-O28" secondAttribute="height" id="460-b2-vKu"/>
+                            <constraint firstAttribute="trailing" secondItem="DYh-wH-eDm" secondAttribute="trailing" id="4Im-ZY-ME4"/>
+                            <constraint firstItem="QR6-Wc-cOD" firstAttribute="width" secondItem="Vf2-sy-O28" secondAttribute="width" id="66D-dR-Ljx"/>
+                            <constraint firstItem="sph-Fy-9eH" firstAttribute="top" secondItem="BvF-9w-97J" secondAttribute="bottom" constant="33" id="8lA-vA-8iU"/>
+                            <constraint firstItem="sph-Fy-9eH" firstAttribute="height" secondItem="BvF-9w-97J" secondAttribute="height" id="BHS-6S-Cf9"/>
+                            <constraint firstItem="z0M-tE-pPY" firstAttribute="top" secondItem="DYh-wH-eDm" secondAttribute="bottom" constant="10" id="FUJ-6k-AZd"/>
+                            <constraint firstItem="c4g-YF-jVA" firstAttribute="top" secondItem="oMK-hS-god" secondAttribute="bottom" constant="32" id="HSl-IB-f74"/>
+                            <constraint firstItem="unP-h6-eYX" firstAttribute="leading" secondItem="hpj-k3-P3F" secondAttribute="leadingMargin" id="HlJ-Vt-acO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QR6-Wc-cOD" secondAttribute="trailing" id="Hns-en-d8W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sph-Fy-9eH" secondAttribute="trailing" id="Ik8-LI-Gwk"/>
+                            <constraint firstItem="Vf2-sy-O28" firstAttribute="centerX" secondItem="hpj-k3-P3F" secondAttribute="centerX" id="L7R-d6-MYw"/>
+                            <constraint firstItem="Vf2-sy-O28" firstAttribute="top" secondItem="Egg-eZ-HTd" secondAttribute="bottom" constant="140" id="N8E-rd-rIn"/>
+                            <constraint firstItem="XYD-Fl-BkC" firstAttribute="top" secondItem="unP-h6-eYX" secondAttribute="bottom" constant="32" id="NBv-v9-2Ba"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BvF-9w-97J" secondAttribute="trailing" id="NfE-kd-doz"/>
+                            <constraint firstItem="OvA-Pz-19N" firstAttribute="width" secondItem="Vf2-sy-O28" secondAttribute="width" id="PJh-nk-ifv"/>
+                            <constraint firstItem="OvA-Pz-19N" firstAttribute="height" secondItem="Vf2-sy-O28" secondAttribute="height" id="QFE-2S-18J"/>
+                            <constraint firstItem="XYD-Fl-BkC" firstAttribute="leading" secondItem="hpj-k3-P3F" secondAttribute="leadingMargin" id="RRK-6t-Nan"/>
+                            <constraint firstItem="sph-Fy-9eH" firstAttribute="width" secondItem="BvF-9w-97J" secondAttribute="width" id="TSo-s8-0Ih"/>
+                            <constraint firstItem="7aq-Kt-H58" firstAttribute="top" secondItem="Egg-eZ-HTd" secondAttribute="bottom" constant="27" id="U42-BN-w6K"/>
+                            <constraint firstItem="c4g-YF-jVA" firstAttribute="height" secondItem="oMK-hS-god" secondAttribute="height" id="VsX-gx-4H3"/>
+                            <constraint firstItem="QR6-Wc-cOD" firstAttribute="top" secondItem="Egg-eZ-HTd" secondAttribute="bottom" constant="140" id="Vtm-UI-m9m"/>
+                            <constraint firstItem="XYD-Fl-BkC" firstAttribute="height" secondItem="oMK-hS-god" secondAttribute="height" id="akA-vv-cQJ"/>
+                            <constraint firstItem="BvF-9w-97J" firstAttribute="top" secondItem="QR6-Wc-cOD" secondAttribute="bottom" constant="31" id="cYx-RM-LSq"/>
+                            <constraint firstItem="BvF-9w-97J" firstAttribute="height" secondItem="QR6-Wc-cOD" secondAttribute="height" id="fOi-U7-fEg"/>
+                            <constraint firstItem="unP-h6-eYX" firstAttribute="top" secondItem="OvA-Pz-19N" secondAttribute="bottom" constant="30" id="glL-xZ-8N1"/>
+                            <constraint firstItem="oMK-hS-god" firstAttribute="width" secondItem="Vf2-sy-O28" secondAttribute="width" id="h3Q-9h-gfb"/>
+                            <constraint firstItem="XYD-Fl-BkC" firstAttribute="width" secondItem="oMK-hS-god" secondAttribute="width" id="jWg-7O-L7d"/>
+                            <constraint firstItem="7aq-Kt-H58" firstAttribute="centerX" secondItem="hpj-k3-P3F" secondAttribute="centerX" id="kNX-Rc-WFm"/>
+                            <constraint firstItem="OvA-Pz-19N" firstAttribute="top" secondItem="Egg-eZ-HTd" secondAttribute="bottom" constant="140" id="my2-Jw-i6c"/>
+                            <constraint firstItem="oMK-hS-god" firstAttribute="height" secondItem="Vf2-sy-O28" secondAttribute="height" id="nzZ-a2-49R"/>
+                            <constraint firstItem="BvF-9w-97J" firstAttribute="width" secondItem="QR6-Wc-cOD" secondAttribute="width" id="ocL-oM-sW1"/>
+                            <constraint firstItem="c4g-YF-jVA" firstAttribute="centerX" secondItem="hpj-k3-P3F" secondAttribute="centerX" id="pVM-fA-Xpc"/>
+                            <constraint firstItem="OvA-Pz-19N" firstAttribute="leading" secondItem="hpj-k3-P3F" secondAttribute="leadingMargin" id="qWp-wt-6z9"/>
+                            <constraint firstItem="oMK-hS-god" firstAttribute="top" secondItem="Vf2-sy-O28" secondAttribute="bottom" constant="31" id="r8K-hw-9Ud"/>
+                            <constraint firstItem="DYh-wH-eDm" firstAttribute="leading" secondItem="hpj-k3-P3F" secondAttribute="leading" id="rAA-yJ-yvk"/>
+                            <constraint firstItem="unP-h6-eYX" firstAttribute="width" secondItem="Vf2-sy-O28" secondAttribute="width" id="swp-nO-XSD"/>
+                            <constraint firstItem="oMK-hS-god" firstAttribute="centerX" secondItem="hpj-k3-P3F" secondAttribute="centerX" id="xya-lU-fMb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdV-wV-sM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4561.875" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gsn-vA-HN8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Alh-Kc-nNw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TYX-21-lqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yAI-4U-jxA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKp-BP-kmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="777.66116941529242"/>
+        </scene>
+        <!--Mass TypeVC-->
+        <scene sceneID="DSc-kc-JCA">
+            <objects>
+                <viewController id="nxp-HJ-HSw" customClass="MassTypeVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zNO-4b-Q01"/>
+                        <viewControllerLayoutGuide type="bottom" id="LGW-MR-8Wa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9i6-Uj-VWT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-N6-Dt3">
+                                <color key="backgroundColor" red="0.8088751435" green="0.17071279880000001" blue="0.2139097452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Gruesa">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gruesaButton:" destination="nxp-HJ-HSw" eventType="touchUpInside" id="fRn-ly-3om"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-X3-6d3">
+                                <color key="backgroundColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Crujiente">
+                                    <color key="titleColor" red="0.098538167770000004" green="0.33889752629999997" blue="0.47204715009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="crujienteButton:" destination="nxp-HJ-HSw" eventType="touchUpInside" id="cdg-zj-fIK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuéntanos sobre la masa..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mox-Kp-lee">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="86B-tf-Umh"/>
+                                    <constraint firstAttribute="height" constant="171" id="Qt9-sp-i5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlO-Lx-caj">
+                                <color key="backgroundColor" red="0.0" green="0.57335412500000005" blue="0.27385261649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <state key="normal" title="Delgada">
+                                    <color key="titleColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delgadaButton:" destination="nxp-HJ-HSw" eventType="touchUpInside" id="ba8-m6-IaR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666399999995" green="0.62239760160000002" blue="0.26808059220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NlO-Lx-caj" firstAttribute="height" secondItem="9i6-Uj-VWT" secondAttribute="width" multiplier="0.2" id="15b-cO-XZT"/>
+                            <constraint firstItem="NlO-Lx-caj" firstAttribute="width" secondItem="9i6-Uj-VWT" secondAttribute="width" id="1A8-lx-zXX"/>
+                            <constraint firstItem="4Bw-N6-Dt3" firstAttribute="width" secondItem="5FU-X3-6d3" secondAttribute="width" id="1tp-Nc-krc"/>
+                            <constraint firstItem="5FU-X3-6d3" firstAttribute="width" secondItem="NlO-Lx-caj" secondAttribute="width" id="2lR-ER-8cX"/>
+                            <constraint firstItem="NlO-Lx-caj" firstAttribute="top" secondItem="5FU-X3-6d3" secondAttribute="bottom" constant="30" id="3v1-Zb-lef"/>
+                            <constraint firstItem="4Bw-N6-Dt3" firstAttribute="height" secondItem="5FU-X3-6d3" secondAttribute="height" id="AIB-kr-huc"/>
+                            <constraint firstItem="5FU-X3-6d3" firstAttribute="centerX" secondItem="9i6-Uj-VWT" secondAttribute="centerX" id="GVj-6x-xsB"/>
+                            <constraint firstItem="mox-Kp-lee" firstAttribute="top" secondItem="9i6-Uj-VWT" secondAttribute="top" constant="48" id="IBf-To-N7w"/>
+                            <constraint firstItem="4Bw-N6-Dt3" firstAttribute="centerX" secondItem="9i6-Uj-VWT" secondAttribute="centerX" id="Pg3-gV-LZ4"/>
+                            <constraint firstItem="mox-Kp-lee" firstAttribute="centerX" secondItem="9i6-Uj-VWT" secondAttribute="centerX" id="Rvl-5Q-ogc"/>
+                            <constraint firstItem="5FU-X3-6d3" firstAttribute="height" secondItem="NlO-Lx-caj" secondAttribute="height" id="ixx-qu-t4n"/>
+                            <constraint firstItem="LGW-MR-8Wa" firstAttribute="top" secondItem="NlO-Lx-caj" secondAttribute="bottom" constant="30" id="oaJ-Pi-nxy"/>
+                            <constraint firstItem="NlO-Lx-caj" firstAttribute="centerX" secondItem="9i6-Uj-VWT" secondAttribute="centerX" id="x36-PU-oyg"/>
+                            <constraint firstItem="5FU-X3-6d3" firstAttribute="top" secondItem="4Bw-N6-Dt3" secondAttribute="bottom" constant="30" id="z6L-ds-Spp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="VNF-Ec-OOt" kind="show" identifier="massTypeDone" id="319-qB-9YH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuG-da-q3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2899" y="124"/>
+        </scene>
+        <!--Cheese TypeVC-->
+        <scene sceneID="iPW-3g-zY7">
+            <objects>
+                <viewController id="VNF-Ec-OOt" customClass="CheeseTypeVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uxY-PF-L8p"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxy-py-2LB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vBW-Hz-nYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Dime cuál de nuestros quesos te apetece más?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9P-Wmp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="FyE-JP-M25"/>
+                                    <constraint firstAttribute="width" constant="301" id="sIo-Aw-64v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEP-rF-Eax">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Mozarela">
+                                    <color key="titleColor" red="0.098538167774677277" green="0.33889752626419067" blue="0.47204715013504028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mozarelaButton:" destination="VNF-Ec-OOt" eventType="touchUpInside" id="oqU-9q-hHJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-Jl-J1Q">
+                                <color key="backgroundColor" red="0.098538167774677277" green="0.33889752626419067" blue="0.47204715013504028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Cheddar">
+                                    <color key="titleColor" red="0.99204939603805542" green="0.99221879243850708" blue="0.99203866720199585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cheddarButton:" destination="VNF-Ec-OOt" eventType="touchUpInside" id="xYD-bc-ZtL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-WD-TRe">
+                                <color key="backgroundColor" red="0.8088751435" green="0.17071279880000001" blue="0.2139097452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fWb-gs-L08"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Sin queso">
+                                    <color key="titleColor" red="0.99204939603805542" green="0.99221879243850708" blue="0.99203866720199585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sinQuesoButton:" destination="VNF-Ec-OOt" eventType="touchUpInside" id="Jyo-7l-lLs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MS-oF-zTW">
+                                <color key="backgroundColor" red="0.0" green="0.57335412502288818" blue="0.27385261654853821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Parmesano">
+                                    <color key="titleColor" red="0.99204939603805542" green="0.99221879243850708" blue="0.99203866720199585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="parmesanoButton:" destination="VNF-Ec-OOt" eventType="touchUpInside" id="4FE-Ej-sxu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666399999995" green="0.62239760160000002" blue="0.26808059220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZQi-9P-Wmp" firstAttribute="top" secondItem="vBW-Hz-nYg" secondAttribute="top" constant="48" id="4vo-ZU-jzk"/>
+                            <constraint firstItem="Jxy-py-2LB" firstAttribute="top" secondItem="lzF-WD-TRe" secondAttribute="bottom" id="6bZ-52-rZg"/>
+                            <constraint firstItem="oEP-rF-Eax" firstAttribute="height" secondItem="pf8-Jl-J1Q" secondAttribute="height" id="B2O-pa-VD5"/>
+                            <constraint firstItem="pf8-Jl-J1Q" firstAttribute="width" secondItem="7MS-oF-zTW" secondAttribute="width" id="BBe-L3-TC8"/>
+                            <constraint firstItem="7MS-oF-zTW" firstAttribute="top" secondItem="pf8-Jl-J1Q" secondAttribute="bottom" constant="30" id="C9B-g7-Vxi"/>
+                            <constraint firstItem="pf8-Jl-J1Q" firstAttribute="top" secondItem="oEP-rF-Eax" secondAttribute="bottom" constant="30" id="LRu-aW-Mgi"/>
+                            <constraint firstItem="lzF-WD-TRe" firstAttribute="top" secondItem="7MS-oF-zTW" secondAttribute="bottom" constant="30" id="MMF-SV-29F"/>
+                            <constraint firstItem="7MS-oF-zTW" firstAttribute="height" secondItem="lzF-WD-TRe" secondAttribute="height" id="OVC-Zj-k8x"/>
+                            <constraint firstItem="oEP-rF-Eax" firstAttribute="centerX" secondItem="vBW-Hz-nYg" secondAttribute="centerX" id="aEo-5u-gL8"/>
+                            <constraint firstItem="7MS-oF-zTW" firstAttribute="width" secondItem="lzF-WD-TRe" secondAttribute="width" id="dqx-Wr-wIU"/>
+                            <constraint firstItem="oEP-rF-Eax" firstAttribute="width" secondItem="pf8-Jl-J1Q" secondAttribute="width" id="fQp-T5-DHQ"/>
+                            <constraint firstItem="ZQi-9P-Wmp" firstAttribute="centerX" secondItem="vBW-Hz-nYg" secondAttribute="centerX" id="fXo-bR-bCr"/>
+                            <constraint firstItem="pf8-Jl-J1Q" firstAttribute="centerX" secondItem="vBW-Hz-nYg" secondAttribute="centerX" id="hsa-9f-grx"/>
+                            <constraint firstItem="pf8-Jl-J1Q" firstAttribute="height" secondItem="7MS-oF-zTW" secondAttribute="height" id="iez-rq-pMH"/>
+                            <constraint firstItem="oEP-rF-Eax" firstAttribute="leading" secondItem="pf8-Jl-J1Q" secondAttribute="leading" id="pex-Ey-04z"/>
+                            <constraint firstItem="lzF-WD-TRe" firstAttribute="leading" secondItem="vBW-Hz-nYg" secondAttribute="leading" id="sa7-O6-xo0"/>
+                            <constraint firstAttribute="trailing" secondItem="lzF-WD-TRe" secondAttribute="trailing" id="uPD-b2-ewH"/>
+                            <constraint firstItem="7MS-oF-zTW" firstAttribute="centerX" secondItem="vBW-Hz-nYg" secondAttribute="centerX" id="xDi-z0-82C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="7P6-5V-gtl" kind="show" identifier="cheeseTypeDone" id="HOx-0k-WWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukl-FM-L8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3748.125" y="137.32394366197184"/>
+        </scene>
+        <!--Check OrderVC-->
+        <scene sceneID="48V-tm-iOH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zr-Z7-edM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="36A-qA-t0A" customClass="CheckOrderVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cs0-6k-GLU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n57-cD-FHt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nnf-uZ-ZS5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revisa tu orden por favor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHq-3z-VLf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="6Py-Ck-vvT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIW-Sw-5np">
+                                <color key="backgroundColor" red="0.73371416330000006" green="0.1282051206" blue="0.091984711590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3zJ-Wq-CTr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                <state key="normal" title="Ordenar">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ordenarButton:" destination="36A-qA-t0A" eventType="touchUpInside" id="xHv-Ff-chg"/>
+                                    <segue destination="epg-xd-quG" kind="show" id="wi7-xl-SRl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3G-NH-Zu7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="0WX-SO-Bbv"/>
+                                    <constraint firstAttribute="height" constant="202" id="27N-PA-A3a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666399999995" green="0.62239760160000002" blue="0.26808059220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JHq-3z-VLf" firstAttribute="leading" secondItem="Nnf-uZ-ZS5" secondAttribute="leadingMargin" constant="-6" id="4J9-6W-nQK"/>
+                            <constraint firstItem="JHq-3z-VLf" firstAttribute="centerX" secondItem="U3G-NH-Zu7" secondAttribute="centerX" id="5mw-Lc-nEz"/>
+                            <constraint firstItem="n57-cD-FHt" firstAttribute="top" secondItem="zIW-Sw-5np" secondAttribute="bottom" constant="10" id="6We-XF-egi"/>
+                            <constraint firstItem="U3G-NH-Zu7" firstAttribute="centerX" secondItem="Nnf-uZ-ZS5" secondAttribute="centerX" id="PA2-aX-MI3"/>
+                            <constraint firstItem="zIW-Sw-5np" firstAttribute="leading" secondItem="Nnf-uZ-ZS5" secondAttribute="leading" id="VSm-4E-FL2"/>
+                            <constraint firstItem="U3G-NH-Zu7" firstAttribute="top" secondItem="JHq-3z-VLf" secondAttribute="bottom" constant="24" id="mAr-O5-cUM"/>
+                            <constraint firstAttribute="trailing" secondItem="zIW-Sw-5np" secondAttribute="trailing" id="mLE-lS-O79"/>
+                            <constraint firstItem="U3G-NH-Zu7" firstAttribute="centerX" secondItem="Nnf-uZ-ZS5" secondAttribute="centerX" id="r7x-Ry-JYe"/>
+                            <constraint firstItem="JHq-3z-VLf" firstAttribute="top" secondItem="cs0-6k-GLU" secondAttribute="bottom" constant="23" id="uX0-Zc-nxE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkOrderLabel" destination="U3G-NH-Zu7" id="M4J-zV-cxz"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5446" y="165"/>
+        </scene>
+        <!--FinishVC-->
+        <scene sceneID="unq-Hj-gkA">
+            <objects>
+                <viewController id="epg-xd-quG" customClass="FinishVC" customModule="pizzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bQz-tg-eLu"/>
+                        <viewControllerLayoutGuide type="bottom" id="PuO-yl-6uK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ErX-Yl-2ne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finalizar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEd-af-jRQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="a4f-I3-DtH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baz-wn-NZn">
+                                <color key="backgroundColor" red="0.73371416330000006" green="0.1282051206" blue="0.091984711590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8fa-F6-0Fe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                <state key="normal" title="Volver a inicio">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToHome:" destination="epg-xd-quG" eventType="touchUpInside" id="PMP-fq-Rka"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="HbI-RD-yBJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muchas gracias por disfrutar de nuestros serivicios. En breve se le hará llegar la orden. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roK-li-jjX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="fTy-Pf-lqc"/>
+                                    <constraint firstAttribute="height" constant="202" id="pua-oe-WP2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88434666399999995" green="0.62239760160000002" blue="0.26808059220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GEd-af-jRQ" firstAttribute="centerX" secondItem="roK-li-jjX" secondAttribute="centerX" id="IqF-Ah-egs"/>
+                            <constraint firstItem="PuO-yl-6uK" firstAttribute="top" secondItem="baz-wn-NZn" secondAttribute="bottom" constant="10" id="XTD-gA-kyW"/>
+                            <constraint firstAttribute="trailing" secondItem="baz-wn-NZn" secondAttribute="trailing" id="bfh-lG-JyM"/>
+                            <constraint firstItem="GEd-af-jRQ" firstAttribute="leading" secondItem="ErX-Yl-2ne" secondAttribute="leadingMargin" constant="-6" id="bnZ-zt-JgB"/>
+                            <constraint firstItem="GEd-af-jRQ" firstAttribute="top" secondItem="bQz-tg-eLu" secondAttribute="bottom" constant="23" id="fn4-3K-v5E"/>
+                            <constraint firstItem="roK-li-jjX" firstAttribute="centerX" secondItem="ErX-Yl-2ne" secondAttribute="centerX" id="kKm-NI-efa"/>
+                            <constraint firstItem="roK-li-jjX" firstAttribute="top" secondItem="GEd-af-jRQ" secondAttribute="bottom" constant="24" id="tw3-oF-xYL"/>
+                            <constraint firstItem="roK-li-jjX" firstAttribute="centerX" secondItem="ErX-Yl-2ne" secondAttribute="centerX" id="vq6-Z9-HQR"/>
+                            <constraint firstItem="baz-wn-NZn" firstAttribute="leading" secondItem="ErX-Yl-2ne" secondAttribute="leading" id="ybH-Dc-KIs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2z-Ip-wRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="-615"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="1228" height="1280"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HbI-RD-yBJ"/>
+    </inferredMetricsTieBreakers>
+</document>
